@@ -1,0 +1,249 @@
+/* PRE
+------------------------------------------------------------------------------ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #171918;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* BASIC
+------------------------------------------------------------------------------ */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    padding: 150px 0px;
+    margin-bottom: 50px;
+    background-image: url('../images/ingamebr.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header .fade {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(22, 35, 29, 0.7);
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    margin: 50px 0px;
+    text-align: center;
+    opacity: 0.5;
+    color: #d858fc;
+    font-style: italic;
+}
+
+.title {
+    max-width: 90%;
+    width: 450px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, #28ef8c , #a325c6);
+    border-radius: 12px 0px 12px 0px;
+    transform: rotate(-10deg);
+    opacity: 0.4;
+}
+
+.title h1 {
+    text-align: center;
+    font-size: 66px;
+    font-weight: 700;
+}
+
+section {
+    padding: 75px 15px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-box {
+    max-width: 100%;
+    width: 450px;
+    padding: 15px 20px;
+    color: #FFFFFF;
+    line-height: 1.8;
+    word-spacing: 1.1;
+    border-left: 2px solid #28ef8c;
+}
+
+.text-box.center {
+    margin: 0 auto;
+}
+
+span.highlight {
+    color: #28ef8c;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+}
+
+.row {
+    width: 100%;
+}
+
+/* SPOTLIGHT
+------------------------------------------------------------------------------ */
+
+.spotlight-box {
+    width: 48%;
+    display: inline-block;
+}
+
+.spotlight-box:last-child {
+    float: right;
+}
+
+.spotlight-box .intro {
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 65px;
+}
+
+.spotlight-box .intro .img {
+    width: 100px;
+    margin-top: -25px;
+    margin-right: 15px;
+    float: left;
+}
+
+.spotlight-box .intro .img img {
+    width: 100%;
+}
+
+.spotlight-box .intro span.sub-title {
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.skills {
+    width: 100%;
+}
+
+.skills .skill {
+    position: relative;
+    margin: 40px 0px;
+}
+
+.skills .skill .name {
+    margin-bottom: 2px;
+    color: #FFFFFF;
+}
+
+
+.bar {
+    position: absolute;
+    width: 100%;
+    height: 8px;
+    background-color: black;
+}
+
+.fill {
+    position: absolute;
+    height: 8px;
+    z-index: 999;
+    background-color: #28ef8c;
+}
+
+.skills.kariz .aerial {
+    width: 85%;
+}
+
+.skills.kariz .ground {
+    width: 65%;
+}
+
+.skills.kariz .position {
+    width: 80%;
+}
+
+.skills.kariz .leadership {
+    width: 35%;
+}
+
+.skills.kariz .communication {
+    width: 90%;
+}
+
+.skills.kariz .ballchasing {
+    width: 95%;
+}
+
+.skills.slaktar .fast {
+    width: 10%;
+}
+
+.skills.slaktar .slow {
+    width: 98%;
+}
+
+.skills.slaktar .ground {
+    width: 90%;
+}
+
+.skills.slaktar .rotation {
+    width: 40%;
+}
+
+.skills.slaktar .avaibility {
+    width: 10%;
+}
+
+.skills.slaktar .toxicity {
+    width: 95%;
+}
+
+@media screen and (max-width: 620px) {
+
+    .container {
+        width: 90%;
+    }
+
+    section {
+        width: 100%;
+        padding: 50px 10px;
+    }
+
+    .title h1 {
+        font-size: 46px;
+    }
+
+    .spotlight-box {
+        width: 100%;
+    }
+
+    .spotlight-box .intro {
+        margin-bottom: 50px;
+    }
+
+    .spotlight-box .intro:last-child {
+        margin-top: 75px;
+    } 
+
+    .spotlight-box:last-child {
+        float: none;
+    }
+
+    .skills .skill:first-child {
+        margin-top: 10px;
+    }
+}
